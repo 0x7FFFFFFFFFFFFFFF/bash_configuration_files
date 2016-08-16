@@ -18,7 +18,8 @@ pathprepend() {
 }
 
 
-
+pathappend "$HOME/.rvm/bin"
+pathpreprend "/usr/local/Cellar/git/2.9.3/bin"
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting 
 
 # Add homebrew git
