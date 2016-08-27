@@ -19,8 +19,8 @@ pathprepend() {
 
 
 pathappend "$HOME/.rvm/bin"
-pathpreprend "/usr/local/Cellar/git/2.9.3/bin"
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting 
+pathprepend "/usr/local/Cellar/git/2.9.3/bin"
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Add homebrew git
 # export PATH="/usr/local/Cellar/git/2.9.3/bin:$PATH"
@@ -32,3 +32,7 @@ export g="$GOPATH"
 # Add gopath bin
 # export PATH="$GOPATH/bin:$PATH"
 pathprepend "$GOPATH/bin"
+
+# Enable color in Terminal
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
