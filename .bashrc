@@ -38,3 +38,4 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias l="ls -latrh"
+alias a="printf '\n\n\n\n\n\n\n\n\n\n'"
