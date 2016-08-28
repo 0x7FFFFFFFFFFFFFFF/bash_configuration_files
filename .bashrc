@@ -36,3 +36,5 @@ pathprepend "$GOPATH/bin"
 # Enable color in Terminal
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+alias l="ls -latrh"
