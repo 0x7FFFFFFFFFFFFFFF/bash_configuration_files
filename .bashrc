@@ -39,3 +39,4 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias l="ls -latrh"
 alias a="printf '\n\n\n\n\n\n\n\n\n\n'"
+alias gp="git push origin master"
