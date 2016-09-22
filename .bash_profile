@@ -42,3 +42,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias l="ls -latrh"
 alias a="printf '\n\n\n\n\n\n\n\n\n\n'"
 alias gp="git push origin master"
+# Add color go the output of "go test -v"
+gt() {
+    go test -v . | sed ''/PASS/s//$(printf "\033[32mPASS\033[0m")/'' | sed ''/FAIL/s//$(printf "\033[31mFAIL\033[0m")/''
+}
