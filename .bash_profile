@@ -24,6 +24,10 @@ pathprepend() {
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+export NVM_DIR="/Users/yangshuai/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 pathappend "$HOME/.rvm/bin"
 pathprepend "/usr/local/Cellar/git/2.9.3/bin"
@@ -42,6 +46,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias l="ls -latrh"
 alias a="printf '\n\n\n\n\n\n\n\n\n\n'"
 alias gp="git push origin master"
+alias gs="printf '\n\n\n\n\n\n\n\n\n\n' && git status"
 alias i="pushd ."
 alias o="popd"
 # Add color go the output of "go test -v"
