@@ -21,15 +21,11 @@ pathprepend() {
 [[ -s "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 
 export NVM_DIR="/Users/yangshuai/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-pathappend "$HOME/.rvm/bin"
 pathprepend "/usr/local/Cellar/git/2.9.3/bin"
 
 # GOPATH
@@ -62,3 +58,8 @@ if [ -d "${PYENV_ROOT}" ]; then
     pathprepend "${PYENV_ROOT}/bin"
     eval "$(pyenv init -)"
 fi
+
+
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+pathprepend "$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
