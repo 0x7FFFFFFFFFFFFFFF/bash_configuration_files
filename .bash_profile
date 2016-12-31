@@ -23,6 +23,7 @@ pathprepend() {
 
 
 export NVM_DIR="/Users/yangshuai/.nvm"
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
